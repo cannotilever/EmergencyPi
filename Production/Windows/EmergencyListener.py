@@ -1,7 +1,6 @@
 #workstation endpoint security listener
 import os
 import time
-import shutil
 import math
 from lxml import html
 import requests
@@ -29,8 +28,8 @@ red = (255,0,0)
 blue =(57,0,236)
 
 def text_objects(text, font):
-    textSurface = font.render(text, True, black)
-    return textSurface, textSurface.get_rect()
+	textSurface = font.render(text, True, black)
+	return textSurface, textSurface.get_rect()
 
 def message_display(text):
 	global gameDisplay
