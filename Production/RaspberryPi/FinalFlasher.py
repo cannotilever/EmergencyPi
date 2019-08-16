@@ -9,7 +9,7 @@ from lxml import html
 import requests
 #from subprocess import Popen
 from subprocess import call
-
+WebServer
 Relay1ControlPin = 15
 GPIO.cleanup() #resets GPIO pins to accept button inputs
 GPIO.setmode(GPIO.BOARD)
@@ -17,7 +17,7 @@ GPIO.setup(Relay1ControlPin, GPIO.OUT) #sets input to GPIO pin#24. Button will b
 print GPIO.RPI_INFO #shows the information about the RasPi
 loopcounter = 0
 PingFailedCounter = 0
-page = requests.get('http://buttonpi.local/generalAlarm.html')
+page = requests.get('http://' + Web Server /generalAlarm.html')
 tree = html.fromstring(page.content)
 status = tree.xpath('//h1/text()')
 statusLast = 'Initializing...'

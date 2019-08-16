@@ -4,7 +4,6 @@ import os
 import shutil
 import math
 import pifacedigitalio as pfio
-from subprocess import call
 
 pfio.init()
 shutil.copyfile("/home/pi/Programming/WebPages/Nominal.html", "/var/www/html/index.html") #assume system is OK
@@ -79,11 +78,9 @@ def AlarmResponder(Alarm, Status):
 		if Status == "1":
 			shutil.copyfile("/home/pi/Programming/WebPages/SilentEmergency.html", "/var/www/html/silentAlarm.html")
 			print "Silent Alarm set to emergency status, Shhhhhh."
-			call(['espeak "Printer Supply Notification: cyan ink low" 2>/dev/null'], shell=True)
 		if Status == "0":
 			shutil.copyfile("/home/pi/Programming/WebPages/Nominal.html", "/var/www/html/silentAlarm.html")
 			print "Silent Alarm deactivated."
-                        call(['espeak "Printer Supply Notification: cyan ink replenished" 2>/dev/null'], shell=True)
 
 while True:
 	#global GeneralAlarm, GeneralAlarmLast
