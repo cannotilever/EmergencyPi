@@ -59,7 +59,7 @@ def PingWebServer():
 		PingFailedCounter = 0
         else:
                 print 'Webserver is UnReachable!'
-		PingFailedCounter += 1
+				PingFailedCounter += 1
 
 while True:
 	global page, tree, status, PingFailedCounter
