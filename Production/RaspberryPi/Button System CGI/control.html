@@ -1,0 +1,34 @@
+<html>
+<head>
+<script Language="Javascript">
+function resetGeneral()
+{
+    document.location="scripts/resetGeneral.py";
+}
+function resetSilent()
+{
+    document.location="scripts/resetSilent.py";
+}
+function resetAll()
+{
+    document.location="scripts/resetAll.py";
+}
+function test()
+{
+        document.location="scripts/test.py";
+}
+</script>
+</head>
+<body>
+    <div style="text-align:center">
+    <h1>Emergency Alert Control Interface</h1>
+
+<br>
+        <button type="button" onmousedown="resetGeneral()">Reset General Alarm</button>
+        <button type="button" onmousedown="resetSilent()">Reset Silent Alarm</button>
+        <button type="button" onmousedown="resetAll()">Reset All Alarms</button>
+        <button type="button" onmousedown="test()">Test System</button>
+<br>
+
+</body>
+</html>
