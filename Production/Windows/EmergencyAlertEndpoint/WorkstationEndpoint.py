@@ -7,7 +7,7 @@ import pygame
 from pygame.locals import *
 
 #Dynamically Changing Values:
-WebServer = '192.168.86.40'
+WebServer = '10.12.5.202'
 display_width = 1920
 display_height = 1080
 

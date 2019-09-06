@@ -24,8 +24,8 @@ def OnStartup():
         if (userInput == "N") or (userInput == "n"):
             print("")
             print("The Emergency Alert System Endpoint is now deactivated for the duration of this session. "
-                  "Terminating in 5 seconds...")
-            time.sleep(5)
+                  "Terminating in 2 seconds...")
+            time.sleep(2)
             exit()
         print("")
         print("INVALID INPUT DETECTED. Please type Y or N!")
