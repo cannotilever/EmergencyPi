@@ -3,7 +3,7 @@
 
 This system was a proof of concept build and will be taken offline, replaced by [block 2,](https://github.com/EAS-block2) in February 2021
 
-##Hardware:
+## Hardware:
 - 2x Raspberry Pi v. 3b+
 - 1x 120vac Raspberry Pi relay HAT
 - 1x Piface interface HAT
